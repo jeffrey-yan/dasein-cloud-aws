@@ -693,7 +693,7 @@ public class ElasticIP extends AbstractIpAddressSupport<AWSCloud> {
             ipAddressId = ip;
         }
         address.setVersion(IPVersion.IPV4);
-        address.setAddressType(AddressType.PUBLIC);
+        address.setAddressType(AddressType.PUBLIC);	//TODO check, vpc - PRIVATE
         address.setAddress(ip);
         address.setIpAddressId(ipAddressId);
         address.setRegionId(regionId);
