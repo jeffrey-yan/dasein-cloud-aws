@@ -50,8 +50,8 @@
         <connection>scm:git:git://github.com/dasein-cloud/dasein-cloud-aws.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/dasein-cloud/dasein-cloud-aws.git</developerConnection>
         <url>http://github.com/dasein-cloud/dasein-cloud-aws</url>
-      <tag>HEAD</tag>
-  </scm>
+      	<tag>HEAD</tag>
+  	</scm>
 
     <parent>
         <groupId>org.sonatype.oss</groupId>
@@ -326,6 +326,11 @@
                 </executions>
             </plugin>
             <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>cobertura-maven-plugin</artifactId>
+                <version>2.7</version>
+            </plugin>
+            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>1.6</version>
@@ -352,6 +357,16 @@
             </plugin>
         </plugins>
     </build>
+    
+    <reporting>
+		<outputDirectory>target/site</outputDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</reporting>
 
     <distributionManagement>
         <repository>
