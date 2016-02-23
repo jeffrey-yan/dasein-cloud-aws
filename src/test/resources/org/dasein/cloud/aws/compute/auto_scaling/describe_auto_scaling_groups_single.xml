@@ -1,0 +1,58 @@
+<!--
+  ~  *
+  ~  Copyright (C) 2009-2015 Dell, Inc.
+  ~  See annotations for authorship information
+  ~
+  ~  ====================================================================
+  ~  Licensed under the Apache License, Version 2.0 (the "License");
+  ~  you may not use this file except in compliance with the License.
+  ~  You may obtain a copy of the License at
+  ~
+  ~  http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~  Unless required by applicable law or agreed to in writing, software
+  ~  distributed under the License is distributed on an "AS IS" BASIS,
+  ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~  See the License for the specific language governing permissions and
+  ~  limitations under the License.
+  ~  ====================================================================
+  ~
+  -->
+
+<DescribeAutoScalingGroupsResponse xmlns="http://autoscaling.amazonaws.com/doc/2011-01-01/">
+    <DescribeAutoScalingGroupsResult>
+        <AutoScalingGroups>
+            <member>
+                <Tags/>
+                <SuspendedProcesses/>
+                <AutoScalingGroupName>my-asg-lbs</AutoScalingGroupName>
+                <HealthCheckType>ELB</HealthCheckType>
+                <CreatedTime>2013-05-06T17:47:15.107Z</CreatedTime>
+                <EnabledMetrics/>
+                <LaunchConfigurationName>my-lc</LaunchConfigurationName>
+                <Instances/>
+                <DesiredCapacity>2</DesiredCapacity>
+                <AvailabilityZones>
+                    <member>us-east-1b</member>
+                    <member>us-east-1a</member>
+                </AvailabilityZones>
+                <LoadBalancerNames>
+                    <member>my-asg-loadbalancer</member>
+                </LoadBalancerNames>
+                <MinSize>2</MinSize>
+                <VPCZoneIdentifier/>
+                <HealthCheckGracePeriod>120</HealthCheckGracePeriod>
+                <DefaultCooldown>300</DefaultCooldown>
+                <AutoScalingGroupARN>arn:aws:autoscaling:us-east-1:803981987763:autoScalingGroup:ca861182-c8f9-4ca7-b1eb-cd35505f5ebb
+                    :autoScalingGroupName/my-asg-lbs</AutoScalingGroupARN>
+                <TerminationPolicies>
+                    <member>Default</member>
+                </TerminationPolicies>
+                <MaxSize>10</MaxSize>
+            </member>
+        </AutoScalingGroups>
+    </DescribeAutoScalingGroupsResult>
+    <ResponseMetadata>
+        <RequestId>0f02a07d-b677-11e2-9eb0-dd50EXAMPLE</RequestId>
+    </ResponseMetadata>
+</DescribeAutoScalingGroupsResponse>

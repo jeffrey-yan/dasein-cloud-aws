@@ -48,6 +48,7 @@ public class AwsTestBase {
     protected final String ACCOUNT_NO = "123456789012";
     protected final String REGION = "us-east-1";
     protected final String DATA_CENTER = "us-east-1-dc";
+    protected final String ACCESS_KEY_PUBLIC = "access-key-public";
 
     protected AWSCloud awsCloudStub;
     protected ProviderContext providerContextStub;
@@ -66,6 +67,7 @@ public class AwsTestBase {
         doReturn(cloudMock).when(providerContextStub).getCloud();
         doReturn(ACCOUNT_NO).when(providerContextStub).getAccountNumber();
         doReturn(REGION).when(providerContextStub).getRegionId();
+        doReturn(ACCESS_KEY_PUBLIC.getBytes()).when(providerContextStub).getAccessPublic();
         //Mockito.doReturn(ENDPOINT).when(providerContextStub).getEndpoint();
         //Mockito.doReturn(ENDPOINT).when(cloudMock).getEndpoint();
     }
